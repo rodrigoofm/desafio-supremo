@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DetailStatementActivity">
+
+  <ImageButton
+      android:id="@+id/ibBack"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="8dp"
+      android:backgroundTint="@android:color/transparent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/ic_back_arrow" />
+
+  <TextView
+      android:id="@+id/tvStatement"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:backgroundTint="#202021"
+      android:text="Comprovante"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      android:layout_marginTop="8dp"
+      android:layout_marginStart="8dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/ibBack" />
+
+  <View
+      android:id="@+id/dividerDatailStatement"
+      android:layout_width="match_parent"
+      android:layout_height="3dp"
+      android:background="?android:attr/listDivider"
+      android:layout_marginTop="16dp"
+      android:backgroundTint="#202021"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvStatement" />
+
+  <TextView
+      android:id="@+id/tvMovimentationType"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Tipo de movimentação"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      android:backgroundTint="#202021"
+      android:layout_marginTop="25dp"
+      android:layout_marginStart="8dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/dividerDatailStatement" />
+
+  <TextView
+      android:id="@+id/tvMovimentationTypeValue"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:backgroundTint="#202021"
+      android:text="Transferência enviada"
+      android:textSize="16sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvMovimentationType" />
+
+  <TextView
+      android:id="@+id/tvAmountStatementDatail"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="16dp"
+      android:backgroundTint="#202021"
+      android:text="Valor"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvMovimentationTypeValue" />
+
+  <TextView
+      android:id="@+id/tvAmountStatementDatailValue"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:backgroundTint="#202021"
+      android:text="R$ 100,00"
+      android:textSize="16sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvAmountStatementDatail" />
+
+  <TextView
+      android:id="@+id/tvToStatementDetail"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="16dp"
+      android:backgroundTint="#202021"
+      android:text="Recebedor"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvAmountStatementDatailValue" />
+
+  <TextView
+      android:id="@+id/tvToStatementDetailValue"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:backgroundTint="#202021"
+      android:text="Rodrigo Fernandes"
+      android:textSize="16sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvToStatementDetail" />
+
+  <TextView
+      android:id="@+id/tvBank"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="16dp"
+      android:backgroundTint="#202021"
+      android:text="Instituição bancária"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvToStatementDetailValue" />
+
+  <TextView
+      android:id="@+id/tvBankValue"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:backgroundTint="#202021"
+      android:text="Bank XPTO"
+      android:textSize="16sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvBank" />
+
+  <TextView
+      android:id="@+id/tvDateTime"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="16dp"
+      android:backgroundTint="#202021"
+      android:text="Data/Hora"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvBankValue" />
+
+  <TextView
+      android:id="@+id/tvDateTimeValue"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:backgroundTint="#202021"
+      android:text="13/10/2020 - 15:27:02"
+      android:textSize="16sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvDateTime" />
+
+  <TextView
+      android:id="@+id/tvAuthentication"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="16dp"
+      android:backgroundTint="#202021"
+      android:text="Autenticação"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvDateTimeValue" />
+v
+  <TextView
+      android:id="@+id/tvAuthenticationValue"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:backgroundTint="#202021"
+      android:text="0123456789"
+      android:textSize="16sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvAuthentication" />
+
+  <Button
+      android:id="@+id/btShare"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="16dp"
+      android:paddingVertical="15dp"
+      android:text="Compartilhar"
+      android:textSize="18sp"
+      android:textAllCaps="false"
+      android:backgroundTint="#00C1AF"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvAuthenticationValue" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
