@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/statementFragment">
+
+    <fragment
+        android:id="@+id/statementFragment"
+        android:name="com.example.desafiosupremo.ui.statement.StatementFragment"
+        android:label="StatementFragment" >
+        <action
+            android:id="@+id/action_statementFragment_to_detailStatementFragment"
+            app:destination="@id/detailStatementFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailStatementFragment"
+        android:name="com.example.desafiosupremo.ui.detail.DetailStatementFragment"
+        android:label="DetailStatementFragment" >
+        <argument
+            android:name="statement"
+            app:argType="com.example.desafiosupremo.data.models.Statement" />
+    </fragment>
+</navigation>
