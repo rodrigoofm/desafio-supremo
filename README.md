@@ -7,8 +7,10 @@ Com a ideia de praticar os conhecimentos obtidos até o momento.
 
 ## Recursos utilizados
 
-- Arquitetura MVVM
+- MVVM
 - Retrofit
+- Hilt
+- Corroutines
 - RecyclerView
 - ViewBinding
 
